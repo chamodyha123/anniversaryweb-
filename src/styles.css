@@ -69,6 +69,7 @@ main { overflow: hidden; }
     0 36px 90px rgba(160, 55, 95, .14),
     inset 0 1px 0 rgba(255,255,255,.95),
     0 0 0 1px rgba(225, 156, 182, .08);
+  -webkit-backdrop-filter: blur(22px);
   backdrop-filter: blur(22px);
   border-radius: 36px;
 }
@@ -93,6 +94,7 @@ h1 {
   margin-top: 28px;
   background: linear-gradient(120deg, #9f274f 3%, #d9467b 40%, #ed7ca5 72%, #b53160 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   filter: drop-shadow(0 8px 20px rgba(218, 70, 124, .10));
 }
@@ -394,6 +396,7 @@ h2 { font-size: clamp(2.7rem, 7vw, 5.6rem); }
 .gift-heading h2 {
   background: linear-gradient(115deg, #a92e59, #e05887 55%, #b23161);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 .gift-heading p { color: #86566a; margin: 16px auto 0; }
@@ -420,6 +423,8 @@ h2 { font-size: clamp(2.7rem, 7vw, 5.6rem); }
 .banner-reveal { max-width: 760px; margin: 0 auto; display: grid; justify-items: center; gap: 22px; }
 .banner-reveal img {
   width: 100%;
+  max-width: 100%;
+  height: auto;
   border-radius: 24px;
   border: 1px solid rgba(200,155,70,.25);
   box-shadow: 0 28px 80px rgba(153, 71, 99, .18);
@@ -435,6 +440,14 @@ h2 { font-size: clamp(2.7rem, 7vw, 5.6rem); }
   .choice-area { min-height: 190px; gap: 16px; }
   .btn { width: 100%; max-width: 280px; }
   .gift-box { transform: scale(.92); margin-top: 42px; }
+}
+
+@media (max-width: 400px) {
+  .wish-title {
+    font-size: clamp(2.4rem, 13vw, 3.15rem);
+    letter-spacing: -.02em;
+    -webkit-text-stroke-width: 1px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
