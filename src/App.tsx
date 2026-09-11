@@ -331,6 +331,20 @@ function App() {
           </motion.section>
         )}
       </AnimatePresence>
+
+      <footer className="romantic-footer">
+        <div className="footer-glow" aria-hidden="true" />
+        <div className="footer-ornament" aria-hidden="true">
+          <span />
+          <Heart size={16} fill="currentColor" />
+          <span />
+        </div>
+        <p className="footer-made">Made with love, just for you</p>
+        <div className="digital-signature" aria-label="Signed by Chamodyha Peshan">
+          Chamodyha Peshan
+        </div>
+        <p className="footer-note">Forever yours ♥</p>
+      </footer>
     </main>
   );
 }
