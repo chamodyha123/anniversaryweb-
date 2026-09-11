@@ -319,8 +319,8 @@ function App() {
                     transition={{ delay: 0.25, duration: 0.7, type: 'spring' }}
                   >
                     <Sparkles className="sparkle-icon" size={28} />
-                    <img src="/anniversary-banner.svg" alt="Happy Anniversary banner" />
-                    <a className="btn btn-download" href="/anniversary-banner.svg" download="our-anniversary-banner.svg">
+                    <img src="/anniversary-gift.png" alt="Happy Anniversary gift banner" />
+                    <a className="btn btn-download" href="/anniversary-gift.png" download="our-anniversary-gift.png">
                       <Download size={20} />
                       Download your banner
                     </a>
